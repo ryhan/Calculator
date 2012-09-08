@@ -6,6 +6,8 @@ body{
 
 #calculator{
 	
+	/* Shape */
+	border-radius: 5px;
 	box-sizing: border-box;
 	display: block;
 	height: 400px;
@@ -13,76 +15,84 @@ body{
 	padding: 20px;
 	width: 300px;
 
+	/* Colors */
 	background-color: #D1D1D1;
 	background: -webkit-linear-gradient(top, #EEE, #DDD, #CCC);
 	border: 1px solid #AAA;
-	border-radius: 5px;
-	box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.25); /* Sets shadow */
 
 }
 
 #display{
 
+	/* Shape */
 	border-radius: 3px;
 	box-sizing: border-box;
 	display: block;
 	height: 100px;
 	padding: 30px;
 
+	/* Colors */
 	background-color: #D2E0E8;
 	border: 1px solid rgba(0,0,0,0.25);
 	box-shadow: 
 		inset 0 3px 10px rgba(0,0,0,0.15),
 		inset 0 50px 0 rgba(255,255,255,0.15);
 
-
-	text-align: right;
+	/* Text formatting */
+	color:#888;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 32px;
-	color:#888;
-
 	overflow: hidden;
+	text-align: right;
+	
 }
 
+/* Parent grouping of all buttons */
 #buttons{
 	text-align: center;
 	margin: 25px 0;
 }
+ 
+.button{
 
-a.button{
-
+	/* Set the cursor to make buttons feel pressable */
 	cursor: pointer;
 
-	
-
+	/* Shape */
 	border-radius: 3px;
 	box-sizing: border-box;
 	display: inline-block;
-
-	width: 55px;
 	height: 50px;
 	margin: 4px 2px;
 	padding:12px;
+	width: 55px;
 
-	color: #888 ;
-	text-decoration: none;
-	text-shadow: 0 1px #FFF;
+	/* Colors */
 	background-color: #E5E5E5;
 	background: -webkit-linear-gradient(top, #F5F5F5, #E0E0E0);
 	border: 1px solid rgba(0,0,0,0.4);
 	box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+
+	/* Text formatting */
+	color: #888 ;
+	text-decoration: none;
+	text-shadow: 0 1px #FFF;
+
 }
-a.button.alt{
-	font-weight: bold;
+
+/* Button active state - styles for when button is pressed */
+a.button:active{
+	background-color: #888;
+	background: -webkit-linear-gradient(top, #AAA, #CCC);
+	box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);	
+}
+
+/* Alternative button style (yellow) */
+.button.alt{
 	background-color: #FFCF45;
 	background: -webkit-linear-gradient(top, #FFCF45, #FFB82F);
 	border: 1px solid rgba(0,0,0,0.35);
 	color: #666;
-}
-
-a.button:active{
-	background-color: #888;
-	background: -webkit-linear-gradient(top, #AAA, #CCC);
-	box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
-	
+	font-weight: bold;
 }
