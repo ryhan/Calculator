@@ -1,0 +1,88 @@
+/* Calculator.CSS */
+
+body{
+	font: 20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+#calculator{
+	
+	box-sizing: border-box;
+	display: block;
+	height: 400px;
+	margin: 100px auto;
+	padding: 20px;
+	width: 300px;
+
+	background-color: #D1D1D1;
+	background: -webkit-linear-gradient(top, #EEE, #DDD, #CCC);
+	border: 1px solid #AAA;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+
+}
+
+#display{
+
+	border-radius: 3px;
+	box-sizing: border-box;
+	display: block;
+	height: 100px;
+	padding: 30px;
+
+	background-color: #D2E0E8;
+	border: 1px solid rgba(0,0,0,0.25);
+	box-shadow: 
+		inset 0 3px 10px rgba(0,0,0,0.15),
+		inset 0 50px 0 rgba(255,255,255,0.15);
+
+
+	text-align: right;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 32px;
+	color:#888;
+
+	overflow: hidden;
+}
+
+#buttons{
+	text-align: center;
+	margin: 25px 0;
+}
+
+a.button{
+
+	cursor: pointer;
+
+	
+
+	border-radius: 3px;
+	box-sizing: border-box;
+	display: inline-block;
+
+	width: 55px;
+	height: 50px;
+	margin: 4px 2px;
+	padding:12px;
+
+	color: #888 ;
+	text-decoration: none;
+	text-shadow: 0 1px #FFF;
+	background-color: #E5E5E5;
+	background: -webkit-linear-gradient(top, #F5F5F5, #E0E0E0);
+	border: 1px solid rgba(0,0,0,0.4);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+a.button.alt{
+	font-weight: bold;
+	background-color: #FFCF45;
+	background: -webkit-linear-gradient(top, #FFCF45, #FFB82F);
+	border: 1px solid rgba(0,0,0,0.35);
+	color: #666;
+}
+
+a.button:active{
+	background-color: #888;
+	background: -webkit-linear-gradient(top, #AAA, #CCC);
+	box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+	
+}
